@@ -1,0 +1,46 @@
+{
+    "human_standard": {
+        "name": "Standart İnsan",
+        "critical_point": {
+            "name": "Kafa",
+            "x": 0.0,
+            "y": 0.47
+        },
+        "anatomy": {
+            "head": {
+                "type": "circle",
+                "x": 0.0,
+                "y": 0.47,
+                "r": 0.12
+            },
+            "torso": {
+                "type": "rect",
+                "x_min": -0.20,
+                "x_max": 0.20,
+                "y_min": -0.35,
+                "y_max": 0.35
+            },
+            "right_arm": {
+                "type": "rect",
+                "x_min": 0.20,
+                "x_max": 0.32,
+                "y_min": -0.10,
+                "y_max": 0.35
+            },
+            "left_arm": {
+                "type": "rect",
+                "x_min": -0.32,
+                "x_max": -0.20,
+                "y_min": -0.10,
+                "y_max": 0.35
+            },
+            "legs": {
+                "type": "rect",
+                "x_min": -0.20,
+                "x_max": 0.20,
+                "y_min": -0.90,
+                "y_max": -0.35
+            }
+        }
+    }
+}
