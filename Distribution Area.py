@@ -2,21 +2,36 @@ import math
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 
-from Database import WEAPONS_DB
+#Pulling data from database
+with open("weapons.json", "r", encoding="utf-8") as file:
+    WEAPONS_DB = json.load(file)
+
+with open("ammos.json", "r", encoding="utf-8") as file:
+    AMMO_DB = json.load(file)
 
 plt.style.use("dark_background")
 
 # --- WEAPON & BALLISTICS SETUP ---
-delta_rifle = WEAPONS_DB["carbine_rifle"]["base_dispersion_angle"]
-distance = 62
+print("\n--- SİLAH SEÇİMİ ---")
+weapon_keys = list(WEAPONS_DB.keys())
 
+for i, s in enumerate(weapon_keys):
+    print(f"{i+1} --- {WEAPONS_DB[s]["name"]}")
+w_choice = int(input("seçmek istediğiniz silahın numarasını giriniz: ")) -1
+s_weapon_key = weapon_keys[w_choice]
+s_weapon = WEAPONS_DB[s_weapon_key]
+
+distance = float(input("Atış mesafesini girin (Metre): "))
+total_shots = int(input("Kaç el ateş edilecek?: "))
+target_choice = input("Nereye nişan alıyorsun? (1: Gövde, 2: Kafa): ").strip()
+
+delta_rifle = s_weapon["base_dispersion_angle"]
 radius_dispersion = distance * math.tan(delta_rifle)
+
 area = math.pi * (radius_dispersion**2)
 sigma = radius_dispersion / 3
-
-total_shots = int(input("How many shots would you want? "))
-target_choice = input("Where are you aiming? (1: Body, 2: Head): ").strip()
 
 # Generate shot dispersions
 x = np.random.normal(0, sigma, total_shots)

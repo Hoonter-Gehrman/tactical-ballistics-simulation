@@ -1,0 +1,82 @@
+{
+    "9mm_standard_fmj": {
+        "name": "9x19mm Standart FMJ",
+        "caliber": "9x19mm",
+        "base_damage": 22.0,
+        "base_penetration": 14.0,
+        "ideal_barrel_cm": 15.0,
+        "drag_rate": 0.008
+    },
+    "9mm_armor_piercing": {
+        "name": "9x19mm Zırh Delici (AP)",
+        "caliber": "9x19mm",
+        "base_damage": 18.0,
+        "base_penetration": 32.0,
+        "ideal_barrel_cm": 18.0,
+        "drag_rate": 0.007
+    },
+    "45acp_fmj": {
+        "name": ".45 ACP FMJ",
+        "caliber": ".45_acp",
+        "base_damage": 34.0,
+        "base_penetration": 10.0,
+        "ideal_barrel_cm": 20.0,
+        "drag_rate": 0.012
+    },
+    "45acp_hollow_point": {
+        "name": ".45 ACP Çukur Uçlu (JHP)",
+        "caliber": ".45_acp",
+        "base_damage": 48.0,
+        "base_penetration": 4.0,
+        "ideal_barrel_cm": 20.0,
+        "drag_rate": 0.015
+    },
+    "12g_buckshot": {
+        "name": "12 Gauge Şevrotin (Saçma)",
+        "caliber": "12_gauge",
+        "base_damage": 85.0,
+        "base_penetration": 6.0,
+        "ideal_barrel_cm": 45.0,
+        "drag_rate": 0.025
+    },
+    "12g_slug": {
+        "name": "12 Gauge Tek Kurşun (Slug)",
+        "caliber": "12_gauge",
+        "base_damage": 110.0,
+        "base_penetration": 25.0,
+        "ideal_barrel_cm": 50.0,
+        "drag_rate": 0.018
+    },
+    "556_standard_ball": {
+        "name": "5.56x45mm Standart Ball",
+        "caliber": "5.56x45mm",
+        "base_damage": 42.0,
+        "base_penetration": 35.0,
+        "ideal_barrel_cm": 45.0,
+        "drag_rate": 0.0025
+    },
+    "556_armor_piercing": {
+        "name": "5.56x45mm Zırh Delici (AP)",
+        "caliber": "5.56x45mm",
+        "base_damage": 28.0,
+        "base_penetration": 68.0,
+        "ideal_barrel_cm": 50.0,
+        "drag_rate": 0.0020
+    },
+    "762_match_grade": {
+        "name": "7.62x51mm Match Grade",
+        "caliber": "7.62x51mm",
+        "base_damage": 75.0,
+        "base_penetration": 45.0,
+        "ideal_barrel_cm": 60.0,
+        "drag_rate": 0.0015
+    },
+    "762_armor_piercing": {
+        "name": "7.62x51mm Zırh Delici (AP)",
+        "caliber": "7.62x51mm",
+        "base_damage": 60.0,
+        "base_penetration": 85.0,
+        "ideal_barrel_cm": 65.0,
+        "drag_rate": 0.0012
+    }
+}

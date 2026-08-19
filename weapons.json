@@ -1,0 +1,48 @@
+{
+    "handgun_compact": {
+        "name": "Kısa Namlu Tabanca",
+        "barrel_length_cm": 10.0,
+        "base_dispersion_angle": 0.045,
+        "fire_rate_rpm": 300,
+        "accepted_calibers": [
+            "9x19mm"
+        ]
+    },
+    "smg_tactical": {
+        "name": "Taktik Hafif Makineli",
+        "barrel_length_cm": 22.0,
+        "base_dispersion_angle": 0.025,
+        "fire_rate_rpm": 850,
+        "accepted_calibers": [
+            "9x19mm",
+            ".45_acp"
+        ]
+    },
+    "combat_shotgun": {
+        "name": "Muharebe Pompalı Tüfeği",
+        "barrel_length_cm": 45.0,
+        "base_dispersion_angle": 0.065,
+        "fire_rate_rpm": 80,
+        "accepted_calibers": [
+            "12_gauge"
+        ]
+    },
+    "carbine_rifle": {
+        "name": "Taktik Karabina",
+        "barrel_length_cm": 40.0,
+        "base_dispersion_angle": 0.012,
+        "fire_rate_rpm": 700,
+        "accepted_calibers": [
+            "5.56x45mm"
+        ]
+    },
+    "sniper_rifle": {
+        "name": "Ağır Keskin Nişancı Tüfeği",
+        "barrel_length_cm": 65.0,
+        "base_dispersion_angle": 0.003,
+        "fire_rate_rpm": 40,
+        "accepted_calibers": [
+            "7.62x51mm"
+        ]
+    }
+}
